@@ -26,6 +26,10 @@
       max-width: 1180px;
       margin: auto;
     }
+      /*Agregado 17/05 12hs*/
+    html {
+      scroll-behavior: smooth;
+    }
 
 /*-----------------------------------------------------------------------------*/
 /* MENU   ---------------------------------------------------------------------*/
@@ -92,10 +96,20 @@
     .hero {
       background: white;
       padding: 70px 0;
+
+      /*Agregado 17/05 12hs*/
+      background-image: url('img/fondo.png');
+      background-size: cover;
+      background-position: center;
     }
 
     .hero-content {
       max-width: 620px;
+
+      padding: 20px;
+      height: 50vh;
+      border-radius: 20px;
+
     }
 
     .hero h1 {
@@ -343,5 +357,17 @@
       .footer-empresa, .footer-categoria {
         display: none;
       }
+      
+    .logo  {
+    justify-content: center;      /*Agregado 17/05 12hs*/
+      } 
+    
+    .hero {
+      background-position: left;   /*Agregado 17/05 12hs*/
+    }
+    .hero-content {
+      height: 30vh;               /*Agregado 17/05 12hs*/
+      text-align: center;         /*Agregado 17/05 12hs*/
+    }
 
     }

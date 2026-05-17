@@ -30,8 +30,8 @@ Recibirán comentarios para fortalecer el proyecto.
 
 # Organización del proyecto
 
-|  Etapa | Resumen Detalle| 
---|--|--|
+| Etapa | Resumen Detalle|
+|--|--|
 | **Idea principal** | Se plantea “un sitio de venta de cursos” en base a todo lo solicitado que sea un ecommerce y contenga todo el contenido para la preentrega (entregable). |
 | **Investigación**|Se analizan plataformas y proyectos similares para tomar referencias de diseño, estructura, navegación y presentación de cursos. |
 | **Diseño inicial**|Se define nombre de sitio, se genera logo, se genera boceto estructural, se idea un diseño estructural visual y paleta de colores de sitio. |
@@ -1783,7 +1783,7 @@ Se genera nuevo proyecto en git y se sube con https://github.com/desktop.
 
 # Nota:
 
-Esta es la Pre entrega de Proyecto FRONT END, datos actualizados de Readme hasta la fecha 17/05/2026 13hs
+Esta es la Pre entrega de Proyecto FRONT END, datos actualizados de Readme hasta la fecha 17/05/2026 12hs
 
 
 # Herramientas utilizadas y fuentes consultadas
@@ -1798,6 +1798,7 @@ Esta es la Pre entrega de Proyecto FRONT END, datos actualizados de Readme hasta
 - [iLoveIMG](https://www.iloveimg.com/)
 - [GitHub Desktop](https://github.com/desktop)
 - [StackEdit](https://stackedit.io/)
+- [W3schools](https://www.w3schools.com/)
 
 # Tecnologías aplicadas
 
