@@ -109,6 +109,8 @@
       padding: 20px;
       height: 50vh;
       border-radius: 20px;
+      /*Agregado 21/05 21hs*/
+      align-content: center;
 
     }
 
@@ -326,7 +328,7 @@
     }
 
 /*-----------------------------------------------------------------------------*/
-/* Responsivo    --------------------------------------------------------------*/
+/* Responsivo mobile ----------------------------------------------------------*/
 /*-----------------------------------------------------------------------------*/
 
     @media (max-width: 768px) {
@@ -368,6 +370,39 @@
     .hero-content {
       height: 30vh;               /*Agregado 17/05 12hs*/
       text-align: center;         /*Agregado 17/05 12hs*/
+    }
+
+    }
+
+/*-----------------------------------------------------------------------------*/
+/* Responsivo mobile ----------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+/*todo tablet Agregado 21/05 21hs*/
+    @media (min-width: 768px) and (max-width: 1000px){
+    
+    .menu-content{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .search{
+      min-width: 500px;
+      margin: auto;
+    }
+
+    .card{                        
+      flex: 1 1 calc(50% - 24px);
+      max-width: calc(50% - 12px);
+    }
+
+    .reviews {                    
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    
+    .hero-content {
+      height: 40vh;
     }
 
     }
