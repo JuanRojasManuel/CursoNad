@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css">
+  <title>CursoNad</title>
+<!-- Agregado 17/05 12hs --------------------------------------------------->
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+</head>
+<body>
+<!-- SECTION HEADER --------------------------------------------------->
+<!-- SECTION HEADER --------------------------------------------------->
+<!-- SECTION HEADER --------------------------------------------------->
+  <header class="menu" id="header"></header>
+
+<!-- SECTION MAIN  ---------------------------------------------------->
+<!-- SECTION MAIN  ---------------------------------------------------->
+<!-- SECTION MAIN  ---------------------------------------------------->
+  <main>
+    <section class="separation-basic carrito-page">
+    <div class="container">
+        <div class="carrito-header">
+        <div>
+            <h2>Mi carrito</h2>
+            <p>Revisá tus cursos antes de finalizar la compra.</p>
+        </div>
+        <a href="cursos.html" class="seguir-comprando">
+            Seguir comprando
+        </a>
+        </div>
+        <div class="carrito-layout">
+        <div class="carrito-tabla-box">
+            <table class="tabla-carrito">
+            <thead>
+                <tr>
+                <th>Curso</th>
+                <th>Precio</th>
+                <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-carrito"></tbody>
+            </table>
+        </div>
+        <aside class="resumen-carrito">
+            <h3>Resumen de compra</h3>
+            <div class="resumen-linea">
+            <span>Cursos</span>
+            <strong id="cantidad-resumen">0</strong>
+            </div>
+            <div class="resumen-total">
+            <span>Total</span>
+            <strong id="total-carrito">$0</strong>
+            </div>
+            <button class="btn-finalizar">
+            Finalizar compra
+            </button>
+            <button id="vaciar-carrito" class="btn-vaciar">
+            Vaciar carrito
+            </button>
+        </aside>
+        </div>
+            <div id="planes-cursos"></div>
+    </div>
+    </section>
+  </main>
+<!-- SECTION FOOTER---------------------------------------------------->
+<!-- SECTION FOOTER---------------------------------------------------->
+<!-- SECTION FOOTER---------------------------------------------------->
+  <footer id="footer"></footer>
+
+<!-- SECTION TOAST---------------------------------------------------->
+<!-- SECTION TOAST---------------------------------------------------->
+<!-- SECTION TOAST---------------------------------------------------->
+<div id="toast-container"></div>
+
+<!-- SCRIPT ---------------------------------------------------->
+<!-- SCRIPT ---------------------------------------------------->
+<!-- SCRIPT ---------------------------------------------------->
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/script.js"></script>
+
+</body>
+</html>

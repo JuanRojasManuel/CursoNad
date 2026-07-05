@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <title>CursoNad</title>
-  <link rel="icon" href="img/favicon.png" type="image/png">
+<!-- Agregado 17/05 12hs --------------------------------------------------->
+  <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 <body>
 <!-- SECTION HEADER --------------------------------------------------->
@@ -16,44 +17,31 @@
 <!-- SECTION MAIN  ---------------------------------------------------->
 <!-- SECTION MAIN  ---------------------------------------------------->
 <!-- SECTION MAIN  ---------------------------------------------------->
-  <main>  
-<!-- SECTION HERO ------------------------------------------->
-<section class="hero">
-  <img class="hero-objects" src="img/hero-objects.png" alt="Notebook y escritorio">
-
-  <div class="container hero-content">
-    <h1>Aprendé nuevas habilidades online</h1>
-    <p>
-      Cursos simples, prácticos y profesionales para mejorar tu futuro laboral.
-    </p>
-    <a class="btn2" href="#cursoscards">Lo ultimo</a>
-    <a class="btn" href="pages/cursos.html">Ver todos cursos</a>
-  </div>
-</section>
-<!-- SECTION NOVEDADES ---------------------------------------->
+  <main>
+    <section class="separation-basic ">
+          <div class="container contact-content"  id="contacto">
+          <h3>Contacto</h3>
+          <p>Escribinos y te responderemos a la brevedad.</p>
+          <form  id="contactForm" class="contact-form" action="https://formspree.io/f/xjglpzze"  method="POST" novalidate>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar mensaje</button>
+            <p id="feedbackForm" class="feedback"></p>
+          </form>
+        </div>
+    </section>
+    <!-- SECTION MAS VISTOS ---------------------------------------->
     <section class="products">
       <div class="container">
         <div class="section-title" id="cursoscards">
-          <h2>Novedades</h2>
-        </div>
-<!-- MOCKAPI ------------------------------------------->
-<!-- MOCKAPI ------------------------------------------->
-            <div class="cards" id="contenedorNovedades"></div>
-<!-- MOCKAPI ------------------------------------------->
-<!-- MOCKAPI ------------------------------------------->
- 
-<!-- SECTION MAS VISTOS ---------------------------------------->
-        <div class="section-title" id="cursoscards">
-          <h2>Cursos Mas vistos</h2>
+          <h2>Cursos Mas Valorados</h2>
         </div>
 <!-- MOCKAPI ------------------------------------------->
 <!-- MOCKAPI ------------------------------------------->
             <div class="cards" id="contenedorMasVistos"></div>
 <!-- MOCKAPI ------------------------------------------->
 <!-- MOCKAPI ------------------------------------------->
-      </div>
-    </section>
-
+       </div>
   </main>
 
 <!-- SECTION FOOTER---------------------------------------------------->
@@ -61,17 +49,13 @@
 <!-- SECTION FOOTER---------------------------------------------------->
   <footer id="footer"></footer>
 
-<!-- SECTION TOAST---------------------------------------------------->
-<!-- SECTION TOAST---------------------------------------------------->
-<!-- SECTION TOAST---------------------------------------------------->
-<div id="toast-container"></div>
-
 <!-- SCRIPT ---------------------------------------------------->
 <!-- SCRIPT ---------------------------------------------------->
 <!-- SCRIPT ---------------------------------------------------->
-<script src="js/header.js"></script>
-<script src="js/footer.js"></script>
-<script src="js/script.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/contacto.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>

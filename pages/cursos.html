@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <title>CursoNad</title>
-  <link rel="icon" href="img/favicon.png" type="image/png">
+<!-- Agregado 17/05 12hs --------------------------------------------------->
+  <link rel="icon" href="../img/favicon.png" type="image/png">
 </head>
 <body>
 <!-- SECTION HEADER --------------------------------------------------->
@@ -16,46 +17,40 @@
 <!-- SECTION MAIN  ---------------------------------------------------->
 <!-- SECTION MAIN  ---------------------------------------------------->
 <!-- SECTION MAIN  ---------------------------------------------------->
-  <main>  
-<!-- SECTION HERO ------------------------------------------->
-<section class="hero">
-  <img class="hero-objects" src="img/hero-objects.png" alt="Notebook y escritorio">
+  <main>
 
-  <div class="container hero-content">
-    <h1>Aprendé nuevas habilidades online</h1>
-    <p>
-      Cursos simples, prácticos y profesionales para mejorar tu futuro laboral.
-    </p>
-    <a class="btn2" href="#cursoscards">Lo ultimo</a>
-    <a class="btn" href="pages/cursos.html">Ver todos cursos</a>
-  </div>
-</section>
-<!-- SECTION NOVEDADES ---------------------------------------->
+<!-- SECTION PRODUCTS ---------------------------------------->
     <section class="products">
       <div class="container">
+        <!-- PLANES  ---------------------------------------------------->
+        <div id="planes-cursos"></div>
         <div class="section-title" id="cursoscards">
-          <h2>Novedades</h2>
+          <h2>Cursos Profesionales</h2>
+        <div class="search">
+            <input type="text" id="buscador" placeholder="Buscar cursos..." />
         </div>
-<!-- MOCKAPI ------------------------------------------->
-<!-- MOCKAPI ------------------------------------------->
-            <div class="cards" id="contenedorNovedades"></div>
-<!-- MOCKAPI ------------------------------------------->
-<!-- MOCKAPI ------------------------------------------->
- 
-<!-- SECTION MAS VISTOS ---------------------------------------->
-        <div class="section-title" id="cursoscards">
-          <h2>Cursos Mas vistos</h2>
         </div>
+        <div class="filtros-cursos">
+        <select id="filtro-categoria">
+            <option value="">Todas las categorías</option>
+        </select>
+        <select id="filtro-nivel">
+            <option value="">Todos los niveles</option>
+        </select>
+        <select id="filtro-duracion">
+            <option value="">Todas las duraciones</option>
+        </select>
+        </div>
+
+<!-- SECTION CARDS ------------------------------------------->
 <!-- MOCKAPI ------------------------------------------->
 <!-- MOCKAPI ------------------------------------------->
-            <div class="cards" id="contenedorMasVistos"></div>
+            <div class="cards" id="contenedorCursos"></div>
 <!-- MOCKAPI ------------------------------------------->
 <!-- MOCKAPI ------------------------------------------->
       </div>
     </section>
-
   </main>
-
 <!-- SECTION FOOTER---------------------------------------------------->
 <!-- SECTION FOOTER---------------------------------------------------->
 <!-- SECTION FOOTER---------------------------------------------------->
@@ -69,9 +64,9 @@
 <!-- SCRIPT ---------------------------------------------------->
 <!-- SCRIPT ---------------------------------------------------->
 <!-- SCRIPT ---------------------------------------------------->
-<script src="js/header.js"></script>
-<script src="js/footer.js"></script>
-<script src="js/script.js"></script>
+<script src="../js/header.js"></script>
+<script src="../js/footer.js"></script>
+<script src="../js/script.js"></script>
 
 </body>
 </html>
