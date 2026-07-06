@@ -390,20 +390,21 @@ tablaCarrito.innerHTML += `
     <td>
       <div class="curso-info">
     <strong>${curso.nombre}</strong>
-    <div class="modalidad-carrito">
+      <div class="plan-selector modalidad-carrito">
         <button
-            class="btn-modalidad ${(curso.modalidad || "Plus") === "Plus" ? "activo" : ""}"
-            data-id="${curso.id}"
-            data-modalidad="Plus">
-            Plus
+          class="plan-option btn-modalidad ${(curso.modalidad || "Plus") === "Plus" ? "activo" : ""}"
+          data-id="${curso.id}"
+          data-modalidad="Plus">
+          Plus
         </button>
+
         <button
-            class="btn-modalidad ${(curso.modalidad || "Plus") === "Full" ? "activo" : ""}"
-            data-id="${curso.id}"
-            data-modalidad="Full">
-            Full
+          class="plan-option btn-modalidad ${(curso.modalidad || "Plus") === "Full" ? "activo" : ""}"
+          data-id="${curso.id}"
+          data-modalidad="Full">
+          Full
         </button>
-    </div>
+      </div>
 </div>
     <td>$${curso.precio}</td>
     <td>

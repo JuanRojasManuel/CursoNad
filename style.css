@@ -630,8 +630,7 @@ a{
   border-radius:999px;
 }
 
-.plan-option,
-.btn-modalidad{
+.plan-option{
   border-radius:999px;
   font-size:13px;
   font-weight:800;
@@ -646,8 +645,7 @@ a{
   border:none;
 }
 
-.plan-option.activo,
-.btn-modalidad.activo{
+.plan-option.activo{
   background:var(--primary);
   color:var(--white);
 }
@@ -665,8 +663,7 @@ a{
 }
 
 .modalidad-carrito{
-  display:flex;
-  gap:8px;
+
   margin-top:10px;
 }
 
@@ -676,23 +673,6 @@ a{
   font-size:13px;
 }
 
-.btn-modalidad{
-  margin-right:6px;
-  padding:7px 11px;
-  background:var(--white);
-  color:var(--text);
-  border:1px solid var(--border);
-  font-weight:700;
-}
-
-.btn-modalidad:hover{
-  color:var(--primary);
-  border-color:var(--primary);
-}
-
-.btn-modalidad.activo{
-  border-color:var(--primary);
-}
 
 /*-----------------------------------------------------------------------------*/
 /* DETALLE DE CURSO -----------------------------------------------------------*/
@@ -1105,7 +1085,72 @@ a{
   text-align:center;
   font-size:14px;
 }
+/*-----------------------------------------------------------------------------*/
+/* MODAL ----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
+.btn-info-plan{
+  width:34px;
+  height:34px;
+  border-radius:var(--radius-pill);
+  border:1px solid var(--border);
+  background:var(--white);
+  color:var(--dark);
+  font-weight:900;
+  cursor:pointer;
+  transition:.25s;
+}
 
+.btn-info-plan:hover{
+  border-color:var(--primary);
+  color:var(--primary);
+  box-shadow:var(--shadow-soft);
+}
+
+.modal-planes{
+  position:fixed;
+  inset:0;
+  background:rgba(15,23,42,.45);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  z-index:99999;
+}
+
+.modal-planes.show{
+  display:flex;
+}
+
+.modal-planes-content{
+  position:relative;
+  width:min(760px, 100%);
+  max-height:90vh;
+  overflow:auto;
+  background:var(--bg);
+  border-radius:var(--radius-xl);
+  padding:28px;
+  box-shadow:var(--shadow-menu);
+}
+
+.modal-planes-content h2{
+  margin-bottom:20px;
+  color:var(--dark);
+}
+
+.modal-cerrar{
+  position:absolute;
+  top:14px;
+  right:14px;
+  width:34px;
+  height:34px;
+  border:none;
+  border-radius:var(--radius-pill);
+  background:var(--white);
+  color:var(--dark);
+  font-size:22px;
+  cursor:pointer;
+  box-shadow:var(--shadow-soft);
+}
 
 /*-----------------------------------------------------------------------------*/
 /* ANIMACIONES ----------------------------------------------------------------*/
@@ -1135,10 +1180,18 @@ a{
     gap:16px;
   }
 
+  .logo img{
+    width:80px;
+  }
+
+  .mobile-logo,
   .btnHamburguesa{
     display:block;
   }
 
+  .desktop-logo{
+    display: none;
+  }
   .nav{
     display:none;
   }
