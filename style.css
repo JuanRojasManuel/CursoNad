@@ -150,7 +150,7 @@ a{
 
 .menu-content,
 .logo,
-.login-menu{
+.btn-menu{
   display:flex;
   align-items:center;
 }
@@ -185,12 +185,6 @@ a{
 
 .space{
   flex:1;
-}
-
-.login-menu{
-  gap:14px;
-  font-size:14px;
-  align-items:baseline;
 }
 
 /*-----------------------------------------------------------------------------*/
@@ -409,7 +403,7 @@ a{
 /* CURSOS / CARDS -------------------------------------------------------------*/
 /*-----------------------------------------------------------------------------*/
 .products{
-  padding:50px 0;
+  padding-bottom: 10px;
 }
 
 .section-title{
@@ -1175,6 +1169,10 @@ a{
   .planes-grid{
     grid-template-columns:1fr;
   }
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
 }
 
 @media (min-width:651px) and (max-width:768px){
@@ -1200,12 +1198,6 @@ a{
     grid-template-columns:1fr;
   }
 
-  .footer-empresa,
-  .footer-categoria{
-    display:none;
-  }
-
-  .contact-content,
   .hero-content{
     text-align:center;
   }

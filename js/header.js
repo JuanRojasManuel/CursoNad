@@ -46,7 +46,7 @@ function renderizarHeader() {
         <span id="contador-carrito">0</span>
     </a>
 <!-- BOTON CONTACTO  ---------------------------------------------->
-    <div class="login-menu nav">
+    <div class="btn-menu nav">
         <a href="${rutaBase}pages/contacto.html" class="btn">Contacto</a>
     </div>
 <!-- MENU Hambuerguesa  ---------------------------------------------->

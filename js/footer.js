@@ -17,7 +17,7 @@ function renderizarFooter() {
             <a href="#">Profesores</a>
             <a href="#">Ayuda</a>
         </div>
-        <div class="container contact-content">
+        <div class="contact-content">
             <h3>Contacto</h3>
             <ul class="contact-list">
                 <li>
